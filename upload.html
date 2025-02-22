@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传资源 - KABADI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">KABADI</a>
+        </div>
+    </nav>
+
+    <div class="upload-container">
+        <div class="upload-form">
+            <h2>上传资源</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="fileName">文件名称</label>
+                    <input type="text" id="fileName" name="fileName" required>
+                </div>
+                <div class="form-group">
+                    <label for="fileInput">选择文件</label>
+                    <input type="file" id="fileInput" name="file" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">选择科目</label>
+                    <select id="category" name="category" required>
+                        <option value="">请选择科目</option>
+                        <option value="chinese">语文</option>
+                        <option value="math">数学</option>
+                        <option value="english">英语</option>
+                        <option value="biology">生物</option>
+                        <option value="geography">地理</option>
+                        <option value="politics">政治</option>
+                        <option value="history">历史</option>
+                        <option value="physics">物理</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">上传</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

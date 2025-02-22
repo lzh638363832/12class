@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源 - KABADI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">KABADI</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul class="category-list">
+                <li class="category-item active" data-category="all">全部</li>
+                <li class="category-item" data-category="chinese">语文</li>
+                <li class="category-item" data-category="math">数学</li>
+                <li class="category-item" data-category="english">英语</li>
+                <li class="category-item" data-category="biology">生物</li>
+                <li class="category-item" data-category="geography">地理</li>
+                <li class="category-item" data-category="politics">政治</li>
+                <li class="category-item" data-category="history">历史</li>
+                <li class="category-item" data-category="physics">物理</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="content-header">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索文件...">
+                </div>
+                <a href="upload.html" class="upload-button">上传资源</a>
+            </div>
+
+            <div class="resources-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>文件名</th>
+                            <th>科目</th>
+                            <th>时间</th>
+                            <th>下载</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resourcesList">
+                        <!-- 资源列表将通过JavaScript动态加载 -->
+                    </tbody>
+                </table>
+            </div>
+
+            <button id="backToTop" class="back-to-top" title="回到顶部">↑</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

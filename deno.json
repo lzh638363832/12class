@@ -1,0 +1,41 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read --allow-write main.ts",
+    "dev": "deno run --watch --allow-net --allow-read --allow-write main.ts"
+  },
+  "imports": {
+    "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
+    "std/": "https://deno.land/std@0.208.0/"
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": [
+      "deno.window"
+    ],
+    "strict": true
+  },
+  "fmt": {
+    "files": {
+      "include": [
+        "**/*.ts"
+      ],
+      "exclude": [
+        "node_modules"
+      ]
+    },
+    "options": {
+      "useTabs": false,
+      "lineWidth": 80,
+      "indentWidth": 2,
+      "singleQuote": false
+    }
+  },
+  "deploy": {
+    "project": "106db066-b98a-4791-8381-2c048c53f993",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
